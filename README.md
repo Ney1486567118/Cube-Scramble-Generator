@@ -15,10 +15,18 @@
 
 ## 运行方法
 
-克隆仓库后，右键仓库文件夹，点击在终端中打开，输入“.\scramble_generation.exe”并回车即可。
+1. 方法一：直接运行可执行程序（.exe文件）
+
+   克隆仓库后，右键仓库文件夹，点击在终端中打开，输入“.\scramble_generation.exe”并回车。
+
+2. 方法二：运行python文件
+
+​	安装完所有库后运行。
+
+​	python版本要求未知。
 
 
 
 ## 生成结果示例
 
-![Example](img/Example.png)
+![example](img/example.png)

@@ -56,8 +56,6 @@ def capture_scramble(idx, is_spare=False):
     row = ws.max_row
     font_style = Font(name="Courier New", size=20)
     alignment_center = Alignment(horizontal="center", vertical="center", wrap_text=True)
-    # ws[f"A{row}"].font = font_style
-    # ws[f"B{row}"].font = font_style
     for col in ["A", "B"]:
         cell = ws[f"{col}{row}"]
         cell.font = font_style
@@ -131,7 +129,7 @@ if __name__ == '__main__':
             if i > 1:
                 next_btn = driver.find_element(By.XPATH, '//*[@id="scrambleDiv"]//span[contains(text(),"下一条")]')
                 next_btn.click()
-                time.sleep(0.5)
+                time.sleep(2)
             is_spare = (i > num_main)
             capture_scramble(i - num_main if is_spare else i, is_spare)
 
